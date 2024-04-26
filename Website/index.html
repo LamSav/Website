@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAD System - Login/Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CAD System</h1>
+
+  <div id="container">
+    <div id="login-form">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+        <img src="Images/Plogo.jfif" width="100" height="100" alt="Police Logo">
+        <img src="Images/background.jfif " width="100" height="100" alt="">
+      </form>
+    </div>
+    <div id="register-form">
+      <h2>Register</h2>
+      <form action="register.php" method="post">
+        <label for="new-username">Username:</label>
+        <input type="text" id="new-username" name="new-username" required>
+        <label for="new-password">Password:</label>
+        <input type="password" id="new-password" name="new-password" required>
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+          <option value="dispatcher">Dispatcher</option>
+          <option value="unit">Unit</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
